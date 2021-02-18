@@ -29,15 +29,16 @@ namespace WindowsFormsApplication15
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            textBox1.Text = "0";
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
         void QuickSort(ref int[] Array, int Left, int Right) {
             int i = Left;
+            int k = 0;
             int j = Right;
             int x = Array[(Left + Right) / 2];
             do
@@ -69,12 +70,13 @@ namespace WindowsFormsApplication15
                 {
                     QuickSort(ref Array, i, Right);
                 }
-            } while (true);
+                k++;
+            } while (k != 100);
 
     }
         private void button2_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
