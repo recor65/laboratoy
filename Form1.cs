@@ -42,10 +42,16 @@ namespace WindowsFormsApplication15
             int x = Array[(Left + Right) / 2];
             do
             {
-                while (Array[i] < x) { i++; }
-                   
-                while (Array[j] > x) { i--; }
-                    
+                while (Array[i] < x)
+                {
+                    i++;
+                }
+
+                while (Array[j] > x)
+                {
+                    i--;
+                }
+
                 if (i <= j)
                 {
                     int t = Array[i];
@@ -53,7 +59,8 @@ namespace WindowsFormsApplication15
                     Array[j] = t;
                     i++;
                     j--;
-                } while (i <= j) ;
+                } while (i <= j)
+                    ;
                 if (Left < j)
                 {
                     QuickSort(ref Array, Left, j);
@@ -62,7 +69,7 @@ namespace WindowsFormsApplication15
                 {
                     QuickSort(ref Array, i, Right);
                 }
-            
+            } while (true);
 
     }
         private void button2_Click(object sender, EventArgs e)
