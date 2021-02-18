@@ -76,7 +76,15 @@ namespace WindowsFormsApplication15
     }
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            listBox1.Items.Add("Test");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                listBox1.Items.Add(i);
+            }
         }
     }
 }
