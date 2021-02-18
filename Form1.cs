@@ -30,6 +30,7 @@ namespace WindowsFormsApplication15
         private void Form1_Load(object sender, EventArgs e)
         {
             textBox1.Text = "0";
+            Application.Exit();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -76,7 +77,12 @@ namespace WindowsFormsApplication15
     }
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            textBox1.Text = "Test_progect";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
